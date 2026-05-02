@@ -16,5 +16,5 @@ RUN mkdir ~/gopath && \
     cp fuzz_podcast_encoder /fuzz_podcast_encoder
 
 # chain to builder
-FROM golang:1.17
+FROM golang:1.23
 COPY --from=builder /fuzz_podcast_encoder /
