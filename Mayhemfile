@@ -2,4 +2,4 @@ project: podcast
 target: podcast-encoder
 
 cmds:
-  - cmd: /fuzz_podcast_encoder
+  - cmd: /fuzz_podcast_encoder -test.fuzz=FuzzPodcastEncodeNative -test.fuzzcachedir=/tmp/fuzz
